@@ -1,0 +1,219 @@
+<!-- @import "../_header.kit" -->
+
+<!-- ******************************Content ************************* -->
+
+
+<div class="content_wrapper--nosidebar">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-12">
+				<div class="content_container site_border">
+					<div class="content_container content_container--header extra-padding">
+						<div class="row">
+							<div class="col-xs-6">
+								<h3 class="title2 title2-padding">البحث</h3>
+							</div>
+							<div class="col-xs-6 text-left">
+								<a class="close-box" href="#"><i class="uicon icon_close"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<!-- @import '../_search-header.kit' -->
+
+					<div class="content_container transparent-bg search-result-container">
+						<div class="col-md-6">
+							<h3 class="title2 search-result-title">نتائج البحث <span>(1) معاملات</span></h3>
+						</div>
+						<div class="col-md-6">
+							<div class="text-left options">
+								<div class="checkbox">
+									<label for="selectAll">
+										<input id="selectAll" type="checkbox" value="">
+										<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+										تحديد الكل
+									</label>
+								</div>
+
+								<div class="toggling-menu">
+									<a href="javascript:goTableView()"><i class="uicon icon_table"></i> جدول</a>
+									<a href="javascript:goCardsView()" class="active"><i class="uicon icon_cards"></i> بطاقات</a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+
+					<div class="content_container content_container--body search-result-body">
+						<div class="col-xs-12">
+							<div class="boxes">
+								<div class="row">
+									<!-- #Start# BOX -->
+									<div class="col-sm-6 col-md-6 col-lg-3 col-xlg-2">
+										<div data-id="1">
+											<!---USE OF THIS DIV IS TO DETECT THE BOX IN JS-->
+											<div class="box animated zoomIn box_no_permission">
+												<div class="row">
+													<div class="col-xs-8">
+														<span class="indent-text indent-title bold">وزارة الداخلية</span>
+													</div>
+													<div class="col-xs-4 text-left" style="">
+														<div class="checkbox">
+															<label>
+																<input type="checkbox" value="">
+																<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+															</label>
+														</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-xs-8">
+														<span class="light-text date-text">28 تشرين الثاني 2018</span>
+													</div>
+													<div class="col-xs-4 text-left" style="">
+														<span class="light-count">17</span>
+													</div>
+												</div>
+
+												<hr class="seperator">
+
+												<div class="row row-multi-fields">
+													<div class="col-xs-12">
+														<div class="light-text">
+															الموضوع
+														</div>
+														<div class="indent-text">
+															تحقيق المعاملة رقم 2
+														</div>
+													</div>
+													<div class="col-xs-6" style="height: 42px;">
+														<div class="light-text">
+															الاسبقيه
+														</div>
+														<div class="indent-text">
+															عاجل
+														</div>
+													</div>
+													<div class="col-xs-6" style="height: 42px;">
+														<div class="light-text">
+															النوع
+														</div>
+														<div class="indent-text">
+															تعميم
+														</div>
+													</div>
+													<div class="col-xs-6" style="height: 42px;">
+														<div class="light-text">
+															السرية
+														</div>
+														<div class="indent-text">
+															عادي
+														</div>
+													</div>
+													<div class="col-xs-6" style="height: 42px;">
+														<div class="light-text">
+															التصنيف
+														</div>
+														<div class="indent-text">
+															اجازة
+														</div>
+													</div>
+												</div>
+
+												<hr class="seperator">
+												<div class="row box-icons">
+													<div class="col-xs-6 text-right">
+														<a href="javascript:$('#returnPaper').modal()" title="edit"><i class="uicon icon_refresh_right"></i>
+															إرجاع</a>
+													</div>
+
+												</div>
+
+											</div>
+										</div>
+									</div>
+									<!-- #END# BOX -->
+
+
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- @import "../_paginations.kit" -->
+
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+</div>
+
+
+<!-- ****************************** end Content ************************* -->
+<!-- return the paper pop up -->
+<div class="modal fade" tabindex="-1" id="returnPaper" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+
+				<button type="button" class="close-button-popup site-color" data-dismiss="modal" aria-label="Close">
+					<i class="uicon icon_arrow_right"></i> الرجوع
+				</button>
+			</div>
+			<div class="modal-body">
+				<h4 class="site-color title4 text-center">إرجاع المعاملة</h2>
+					<div class="row">
+
+						<div class="col-xs-12 col-sm-10 col-sm-push-1">
+							<fieldset>
+								<div class="form-group">
+									<label>يرجى ادخال سبب الارجاع</label>
+									<div>
+										<textarea class="form-control"></textarea>
+										
+									</div>
+								</div>
+							</fieldset>
+						</div>
+					</div>
+
+			</div>
+			<div class="modal-footer actions-buttons">
+				<button class="btn-site btn-trans" data-dismiss="modal">
+					الغاء</button>
+				<button class="btn-site" onclick="$('#success').modal()" data-dismiss="modal">
+					إرجاع</button>
+
+			</div>
+		</div>
+	</div>
+</div>
+<!-- #END#return the paper pop up -->
+
+<!-- confirm pop up -->
+<div class="modal fade" tabindex="-1" id="success" role="dialog">
+		<div class="modal-dialog modal-sm" role="document">
+			<div class="modal-content">
+		
+				<div class="modal-body">
+					<h4 class="site-color title4 text-center">تم إرجاع المعاملة بنجاح</h2>
+						
+				</div>
+				<div class="modal-footer actions-buttons">
+					<button class="btn-site" data-dismiss="modal">
+							الرجوع الى الصفحة الرئيسية</button>
+				
+	
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- #END#confirm pop up -->
+
+<!-- @import "../_footer.kit" -->

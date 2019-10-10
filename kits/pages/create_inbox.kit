@@ -1,0 +1,426 @@
+<!-- @import "../_header.kit" -->
+
+<!-- ******************************Content ************************* -->
+
+
+<div class="content_wrapper--nosidebar">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-12">
+				<div class="content_container site_border">
+					<div class="content_container content_container--header extra-padding">
+						<div class="row">
+							<div class="col-xs-6">
+								<h3 class="title2 title2-padding">انشاء وارد</h3>
+							</div>
+							<div class="col-xs-6 text-left">
+								<a class="btn-site btn-inbox-up" href="#"><i class="uicon icon_copy"></i> نسخ بيانات أخر وارد</a>
+								<a class="close-box hidden-xs" href="#"><i class="uicon icon_close"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="content_container content_container--body transparent-bg">
+						<div class="options-list row">
+
+							<div class="col-xs-4 col-sm-2 text-center"><a href="#" class="boardered-circle-transparent active"><i class="uicon icon_folder1"></i></a>
+								<a href="#"> البيانات الاساسية</a></div>
+
+							<div class="col-xs-4 col-sm-2 text-center"><a href="#" class="boardered-circle-transparent"><i class="uicon icon_folder2"></i></a>
+								<a href="#"> ملحقات اصل المعاملة</a></div>
+							<div class="col-xs-4 col-sm-2 text-center"><a href="#" class="boardered-circle-transparent"><i class="uicon icon_folder3"></i></a>
+								<a href="#"> بيانات صاحب العلاقة</a></div>
+							<div class="col-xs-4 col-sm-2 text-center"><a href="#" class="boardered-circle-transparent"><i class="uicon icon_folder4"></i></a>
+								<a href="#"> نسخ الكترونية لادارة داخلية</a></div>
+							<div class="col-xs-4 col-sm-2 text-center"><a href="#" class="boardered-circle-transparent"><i class="uicon icon_folder4"></i></a>
+								<a href="#"> نسخ الكترونية لادارة خارجية</a></div>
+							<div class="col-xs-4 col-sm-2 text-center"><a href="#" class="boardered-circle-transparent"><i class="uicon icon_folder5"></i></a>
+								<a href="#"> ربط</a></div>
+						</div>
+					</div>
+					<div class="content_container content_container--body white-bg">
+						<div class="col-xs-12">
+							<div class="single-wrapper">
+								<!--This row has been removed but keep committed if you prefer to add it again-->
+								<!--<div class="row">
+									<div class="col-xs-6">
+										<span class="indent-text">
+											معاملة رقم: ٤٣٢٥٥٥
+										</span>
+									</div>
+									<div class="col-xs-6  text-left">
+										<span class="indent-text">
+											02/01/2019 &nbsp;<span>الاحد</span>
+										</span>
+									</div>
+
+								</div>
+								<hr />-->
+								<!--This title has been removed while there it is highlighted -->
+								<!--<div class="row">
+									<div class="col-xs-12">
+										<h4 class="title4">بيانات المعاملة</h4>
+									</div>
+								</div>-->
+
+								<div class="row">
+
+									<!-- Form start -->
+									<form class="form-horizontal" action="" method="post">
+
+										<div class="col-sm-4">
+											<fieldset>
+												<div class="form-group">
+													<label class="control-label">نوع جهة الوارد <span class="stark">*</span></label>
+													<div>
+														<select data-placeholder="اختر النوع" name="types[]" multiple="multiple" class="form-control select2 trans-input">
+															<option></option>
+															<option>نوع1</option>
+															<option selected>نوع2</option>
+															<option>نوع3نوع3نوع3</option>
+															<option>نوع4</option>
+															<option>نوع5</option>
+															<option>نوع6</option>
+															<option>نوع7</option>
+															<option>نوع8</option>
+														</select>
+													</div>
+												</div>
+											</fieldset>
+										</div>
+										<div class="col-sm-4">
+											<fieldset>
+												<div class="form-group">
+													<label class="control-label">جهة الوارد <span class="stark">*</span></label>
+													<div>
+														<select class="form-control select2 trans-input">
+															<option>جهات</option>
+															<option>-----</option>
+														</select>
+													</div>
+												</div>
+											</fieldset>
+										</div>
+										<div class="col-sm-4">
+											<fieldset>
+												<div class="form-group">
+													<label class="control-label">درجة السرية <span class="stark">*</span></label>
+													<div>
+														<select class="form-control select2 trans-input">
+															<option>جهات</option>
+															<option>-----</option>
+														</select>
+													</div>
+												</div>
+											</fieldset>
+										</div>
+
+
+										<div class="col-sm-4">
+											<fieldset>
+												<div class="form-group">
+													<label class="control-label">التصنيف الموضوعي <span class="stark">*</span></label>
+													<div>
+														<select class="form-control select2 trans-input">
+															<option>التصنيف الموضوعي</option>
+															<option>-----</option>
+														</select>
+													</div>
+												</div>
+											</fieldset>
+										</div>
+										<div class="col-sm-4">
+											<fieldset>
+												<div class="form-group">
+													<label class="control-label">نوع الخطاب <span class="stark">*</span></label>
+													<div>
+														<select class="form-control select2 trans-input">
+															<option>نوع الخطاب</option>
+															<option>-----</option>
+														</select>
+													</div>
+												</div>
+											</fieldset>
+										</div>
+										<div class="col-sm-4">
+											<fieldset>
+												<div class="form-group">
+													<label class="control-label">طريقة الاستلام <span class="stark">*</span></label>
+													<div>
+														<select class="form-control select2 trans-input">
+															<option>طريقة الاستلام</option>
+															<option>-----</option>
+														</select>
+													</div>
+												</div>
+											</fieldset>
+										</div>
+
+
+										<div class="col-sm-8">
+											<div class="row">
+												<div class="col-sm-6">
+													<fieldset>
+														<div class="form-group">
+															<label class="control-label">درجة الاهمية <span class="stark">*</span></label>
+															<div>
+																<select class="form-control select2 trans-input">
+																	<option>درجة الاهمية</option>
+																	<option>-----</option>
+																</select>
+															</div>
+														</div>
+													</fieldset>
+												</div>
+												<div class="col-sm-6">
+													<fieldset>
+														<div class="form-group">
+															<label class="control-label">محالة الى <span class="stark">*</span></label>
+															<div>
+																<select class="form-control select2 trans-input">
+																	<option>اسم الشخص</option>
+																	<option>-----</option>
+																</select>
+															</div>
+														</div>
+													</fieldset>
+												</div>
+
+												<div class="col-sm-6">
+													<fieldset>
+														<div class="form-group">
+															<label class="control-label">قائمة التوزيع </label>
+															<div>
+																<select class="form-control select2 trans-input">
+																	<option>قائمة</option>
+																	<option>-----</option>
+																</select>
+															</div>
+														</div>
+													</fieldset>
+												</div>
+												<div class="col-sm-6">
+													<fieldset>
+														<div class="form-group">
+															<label class="control-label">الموظف المختص </label>
+															<div>
+																<select class="form-control select2 trans-input">
+																	<option>الموظف</option>
+																	<option>-----</option>
+																</select>
+															</div>
+														</div>
+													</fieldset>
+												</div>
+												<div class="col-sm-6">
+													<fieldset>
+														<div class="form-group">
+															<label class="control-label">دلائل البحث </label>
+															<div>
+																<input class="form-control" type="text" />
+															</div>
+														</div>
+													</fieldset>
+												</div>
+												<div class="col-sm-6">
+													<fieldset>
+														<div class="form-group">
+															<label class="control-label">موقعة من </label>
+															<div>
+																<select class="form-control select2 trans-input">
+																	<option>الموظف</option>
+																	<option>-----</option>
+																</select>
+															</div>
+														</div>
+													</fieldset>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<fieldset>
+												<div class="form-group">
+													<label class="control-label">الوصف<span class="stark">*</span></label>
+													<div>
+														<textarea class="form-control long-textarea">الوصف</textarea>
+													</div>
+												</div>
+											</fieldset>
+										</div>
+
+										<div class="col-sm-4">
+											<div class="row">
+												<div class="col-sm-12">
+													<fieldset>
+														<div class="form-group">
+															<label class="control-label">فيها موعد </label>
+															<div class="inline-radio">
+																<div class="radio">
+																	<label>
+																		<input type="radio" checked name="radio1" value="">
+																		<span class="cr"><i class="cr-icon"></i></span>
+																		<text>نعم</text>
+																	</label>
+																</div>
+																<div class="radio">
+																	<label>
+																		<input type="radio" name="radio1" value="">
+																		<span class="cr"><i class="cr-icon"></i></span>
+																		<text>لا</text>
+																	</label>
+																</div>
+
+															</div>
+														</div>
+													</fieldset>
+												</div>
+												<div class="col-sm-12">
+													<fieldset>
+														<div class="form-group">
+															<label class="control-label">تاريخ الموعد </label>
+															<div class="with-icon">
+																<input type="text" class="form-date form-control" />
+																<a href="javascript:void(0)" class="date-icon"><i class="uicon icon_calendar"></i></a>
+															</div>
+														</div>
+													</fieldset>
+												</div>
+											</div>
+
+										</div>
+										<div class="col-sm-8">
+											<fieldset>
+												<div class="form-group">
+													<label class="control-label">ملاحظات </label>
+													<div>
+														<textarea class="form-control long-textarea2">ملاحظات</textarea>
+
+													</div>
+												</div>
+											</fieldset>
+										</div>
+
+										<div class="col-sm-12">
+											<p class="stark">يرجى تعبئة جميع الحقول التي تحتوي على اشارة * </p>
+										</div>
+
+									</form>
+
+								</div>
+								<hr />
+								<div class="row">
+									<div class="col-sm-12">
+										<!-- Paper info -->
+										<div class="animated zoomIn">
+											<div class="row">
+												<div class="col-xs-12 text-center">
+													<h4 class="title6"> خطاب اصل المعاملة</h4>
+												</div>
+												<div class="col-xs-12 text-center">
+
+													<div class="previewBox">
+														<div class="row">
+															<div class="col-xs-12 text-left">
+																<div class="preview_options">
+																	<ul class="preview_options_list">
+																		<li>
+																			<a href="#"><i class="uicon icon_scan"></i></a>
+																		</li>
+																		<li>
+																			<a href="#"><i class="uicon icon_scan"></i><span class="colored-chart"></span></a>
+																		</li>
+																		<li>
+																			<a href="#"><i class="uicon icon_attachment_plus"></i></a>
+																		</li>
+																		<li>
+																			<a href="javascript:void(0)" class="VzoomOut"><i class="uicon icon_zoom-out"></i></a>
+																		</li>
+																		<li>
+																			<a href="javascript:void(0)" class="VzoomIn"><i class="uicon icon_zoom-in"></i></a>
+																		</li>
+																		<li>
+																			<a href="javascript:void(0)" class="iviewer_rotate_right"><i class="uicon icon_refresh_right"></i></a>
+																		</li>
+																		<li>
+																			<a href="javascript:void(0)" class="iviewer_rotate_left"><i class="uicon icon_refresh-left"></i></a>
+																		</li>
+																		<li>
+																			<a href="#"><i class="uicon icon_edit2"></i></a>
+																		</li>
+																		<li>
+																			<a href="#"><i class="uicon icon_barcode"></i></a>
+																		</li>
+																		<li>
+																			<a href="#"><i class="uicon icon_barcode"></i><span class="colored-plus"></span></a>
+																		</li>
+																		<li>
+																			<a href="javascript:PrintImage('/images/doc_sample.jpg')"><i class="uicon icon_printer"></i></a>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-xs-12 text-left wrapper">
+																<!-- Canvas container-->
+																<div id="viewer" class="viewer"></div>
+
+															</div>
+														</div>
+
+													</div>
+
+
+												</div>
+												<div class="col-xs-12 text-left preview-mini-navigation">
+													<div class="row">
+														<div class="col-xs-4 text-right">
+															<a href="javascript:void:(0)" class="ViewrPrev"><i class="uicon icon_arrow_right"></i></a>
+														</div>
+														<div class="col-xs-4 text-center">
+															<span class="count">1</span><span class="seper">/</span><span>2</span>
+														</div>
+														<div class="col-xs-4 text-left">
+															<a href="javascript:void:(0)" class="ViewrNext"><i class="uicon icon_arrow_left"></i></a>
+														</div>
+													</div>
+												</div>
+												<div class="col-xs-12 text-left preview-mini-options">
+													<a href="#" class="color-danger remove-mini"><i class="uicon icon_recycle"></i> حذف </a>
+													<a class="btn-site" href="#"><i class="uicon icon_save"></i> حفظ </a>
+												</div>
+
+											</div>
+
+										</div>
+
+										<!-- Paper info #END# -->
+									</div>
+
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="content_container content_container--footer">
+						<div class="row">
+							<div class="col-xs-12 text-center">
+								<button class="btn-site" data-toggle="modal" data-target="#saveModal"><i class="uicon icon_save"></i> حفظ
+									المعاملة والخروج</button>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+</div>
+
+
+<!-- ****************************** end Content ************************* -->
+<!-- @import "../_popup.kit" -->
+<!-- @import "../_footer.kit" -->

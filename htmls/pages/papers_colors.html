@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link type="image/x-icon" rel="shortcut icon" href="./favicon.ico">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="theme-color" content="#0c7c5a">
+	<title>وزارة العدل</title>
+	<!-- Bootstrap Core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-rtl.min.css" rel="stylesheet">
+	<!-- Custom CSS -->
+
+	<link href="css/bootstrap-select.min.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
+	<link href="css/select2.min.css" rel="stylesheet" />
+	<link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/mob_style.css" rel="stylesheet">
+
+</head>
+
+<body dir="rtl">
+	<div class="fixed-top">
+		<div class="top-header">
+			<div class="container-fluid">
+				<div class="row row-custom">
+					<div class="col-sm-6 col-xs-3 col-xs-0-padding">
+						<a class="main_logo" href="#"><img src="images/main_logo.svg" title="Logo" alt="Logo" /></a>
+						<a class="main_logo second_logo" href="#"><img src="images/second_logo.svg" title="Logo" alt="Logo" /></a>
+					</div>
+					<div class="col-sm-6 col-xs-9">
+						<ul class="top-nav-list">
+							<li class="top-nav-list--userdate">
+						
+								<a href="#" class="profile-circle">
+									<img src="./images/pro_pic.png" width="44" height="44" />
+									<!--<i class="uicon icon_screen"></i>-->
+								</a>
+								<div class="user-info">
+									<span>فلان الفلاني</span>
+									<span class="mini">الادارة العامة</span>
+
+								</div>
+								<div class="dropdown inline-dropdown ">
+									<button class="btn-transparent dropdown-toggle" >
+										<i class="uicon icon_arrow_down"></i></button>
+									<ul class="dropdown-menu dropdown-menu--special">
+										<li><a href="#">التوقيع والتأشير الإلكتروني</a></li>
+										<li><a href="#">ورقة الإحالة</a></li>
+										<li><a href="#">إضافة قائمة توزيع خاصة للموظف</a></li>
+										<li><a href="#">التنبيهات</a></li>
+										<li><a href="#">المساعدة</a></li>
+										<li><a href="#">الدعم</a></li>
+										<li><a href="#">تسجيل الخروج</a></li>
+									</ul>
+								</div>
+
+							</li>
+							<li><a class="boardered-circle" href="javascript:openSearch()"><i class="uicon icon_search"></i></a></li>
+							<li><a class="boardered-circle" href="#"><i class="uicon icon_comments"></i></a></li>
+							<li><a class="boardered-circle filled" href="#"><i class="uicon icon_exit"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- start of fixed header -->
+		<nav class="navbar navbar-default navbar-second">
+			<div class="container-fluid">
+				<div class="row row-custom">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+						 aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<div class="toggle_sidebar_mobile"><a href="javascript:void(9)"><i class="uicon icon_burger"></i></a></div>
+					</div>
+					<div id="navbar" class="navbar-collapse collapse">
+
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#"><i class="uicon icon_cards bold"></i>المعاملات</a></li>
+							<li><a href="#"><i class="uicon icon_menu2"></i>المهام <span class="notification_sticky">3</span></a></li>
+							<li><a href="#"><i class="uicon icon_menu3"></i>استقبال الادارة</a></li>
+							<li><a href="#"><i class="uicon icon_menu4"></i>تقارير</a></li>
+							<li><a href="#"><i class="uicon icon_menu5 large"></i>لوحة قياس مستوى الاداء</a></li>
+
+						</ul>
+
+					</div>
+				</div>
+			</div>
+		</nav>
+
+	</div>
+
+	<!-- End of fixed header -->
+<!-- search container -->
+<div id="searchOverlay" class="overlaySearch">
+	<span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+	<div class="overlay-content">
+	  <form action="" onsubmit="return validateSearch()">
+		<button type="submit" class="btn-search-submit"><i class="uicon icon_search"></i></button>
+		<input type="text" class="searchKeyword" placeholder="ادخل كلمة البحث .." name="search">
+		
+	  </form>
+	</div>
+  </div>
+<div class="main_sidebar">
+		<div class="toggle_sidebar"><a href="javascript:void(9)"><i class="uicon icon_burger"></i></a></div>
+		<ul class="sub-pages-list">
+			<li class="selected">
+				<a href="#">
+					<span>
+						<span><img src="./images/leftIcons/group1.png" width="31" height="32" /></span>
+						معاملات قيد التنفيذ
+					</span>
+				</a>
+			</li>
+			<!--<li>
+				<a href="#">
+					<span>
+						<span><img src="./images/leftIcons/group2.png" width="28" height="32" /></span>
+						معاملات متأخرة
+					</span>
+				</a>
+			</li>-->
+			<!--<li>
+				<a href="#">
+					<span>
+						<span><img src="./images/leftIcons/group3.png" width="29" height="32" /></span>
+						معاملات فيها موعد
+					</span>
+				</a>
+			</li>-->
+			<li>
+				<a href="#">
+					<span>
+						<span><img src="./images/leftIcons/group4.png" width="31" height="32" /></span>
+						معاملات مستلمة
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<span>
+						<span><img src="./images/leftIcons/group5.png" width="31" height="32" /></span>
+						معاملات منجزة
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<span>
+						<span><img src="./images/leftIcons/group6.png" width="27" height="37" /></span>
+						معاملات صادرة
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<span>
+						<span><img src="./images/leftIcons/group7.png" width="28" height="29" /></span>
+						معاملات مرسلة
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<span>
+						<span><img src="./images/leftIcons/group8.png" width="24" height="29" /></span>
+						معاملات قيد المتابعة
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<span>
+						<span><img src="./images/leftIcons/group9.png" width="31" height="32" /></span>
+						نسخ الكترونية
+					</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+<!-- ******************************Content ************************* -->
+
+
+<div class="content_wrapper">
+	<h2 class="site-color main-title">معاملات قيد التنفيذ</h2>
+
+	<div class="content_container site_border">
+		<div class="content_container content_container--header">
+			<div class="col-md-6">
+				<div class="btn-options">
+					<a class="btn-site" href="#">+ انشاء صادر</a>
+					<a class="btn-site" href="#">+ انشاء وارد</a>
+					<a class="btn-site" href="#">+ انشاء معاملة داخلية</a>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="text-left options">
+					<div class="checkbox">
+						<label for="selectAll">
+							<input id="selectAll" type="checkbox" value="">
+							<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+							تحديد الكل
+						</label>
+					</div>
+
+					<a class="dashed-circle" href="javascript:toggleFilterBox()"><i class="uicon icon_filter"></i></a>
+					<a class="dashed-circle" href="javascript:toggleOrderBox()"><i class="uicon icon_order"></i></a>
+					<div class="toggling-menu">
+						<a href="javascript:goTableView()"><i class="uicon icon_table"></i> جدول</a>
+						<a href="javascript:goCardsView()" class="active"><i class="uicon icon_cards"></i> بطاقات</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="content_container content_container--body transparent-bg">
+    
+        <ul class="nav nav-pills nav-justified nav-filtering">
+            <li role="presentation" class="active"><a href="#">الكل</a></li>
+            <li role="presentation"><a href="#">فيها موعد</a></li>
+            <li role="presentation"><a href="#">المتأخرة</a></li>
+        </ul>
+    
+</div>
+		<div class="content_container content_container--body transparent-bg filter-box">
+    <div class="row row-mob-no-padding">
+        <form class="form-horizontal" action="" method="post">
+
+            <div class="col-md-4 col-xs-6">
+                <fieldset>
+                    <div class="form-group">
+                        <label class="control-label col-sm-6 col-md-4">التصنيف الموضوعي</label>
+                        <div class="col-sm-6 col-md-8">
+                            <select class="form-control select2 trans-input">
+                                <option>التصنيف الموضوعي</option>
+                                <option>-----</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="col-md-4 col-xs-6">
+                <fieldset>
+                    <div class="form-group">
+                        <label class="control-label col-sm-6 col-md-4">درجة الاسبقية</label>
+                        <div class="col-sm-6 col-md-8">
+                            <select class="form-control select2 trans-input">
+                                <option>درجة الاسبقية </option>
+                                <option>-----</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="col-md-4 col-xs-6">
+                <fieldset>
+                    <div class="form-group">
+                        <label class="control-label col-sm-6 col-md-4">درجة السرية</label>
+                        <div class="col-sm-6 col-md-8">
+                            <select class="form-control select2 trans-input">
+                                <option>السرية</option>
+                                <option>-----</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="col-md-4 col-xs-6">
+                <fieldset>
+                    <div class="form-group">
+                        <label class="control-label col-sm-6 col-md-4">الجهة المرسل لها</label>
+                        <div class="col-sm-6 col-md-8">
+                            <select class="form-control select2 trans-input">
+                                <option>الكل</option>
+                                <option>-----</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="col-md-4 col-xs-6">
+                <fieldset>
+                    <div class="form-group">
+                        <label class="control-label col-sm-6 col-md-4">نوع الخط</label>
+                        <div class="col-sm-6 col-md-8">
+                            <select class="form-control select2 trans-input">
+                                <option>نوع</option>
+                                <option>-----</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="col-md-4 col-xs-6">
+                <fieldset>
+                    <div class="form-group">
+                        <label class="control-label col-sm-6 col-md-4">رقم المعاملة</label>
+                        <div class="col-sm-6 col-md-8">
+                            <select class="form-control select2 trans-input">
+                                <option>الكل</option>
+                                <option>-----</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+<div class="content_container content_container--body transparent-bg order-box">
+    <div class="row row-mob-no-padding">
+        <form class="form-horizontal" action="" method="post">
+
+            <div class="col-md-4 col-xs-6">
+                <fieldset>
+                    <div class="form-group">
+                        <label class="control-label col-sm-6 col-md-4">ترتيب حسب الابجدية</label>
+                        <div class="col-sm-6 col-md-8">
+                            <select class="form-control select2 trans-input">
+                                <option>أ-ي</option>
+                                <option>-----</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="col-md-4 col-xs-6">
+                <fieldset>
+                    <div class="form-group">
+                        <label class="control-label col-sm-6 col-md-4">ترتيب حسب السرية</label>
+                        <div class="col-sm-6 col-md-8">
+                            <select class="form-control select2 trans-input">
+                                <option>السرية</option>
+                                <option>-----</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="col-md-4 col-xs-6">
+                <fieldset>
+                    <div class="form-group">
+                        <label class="control-label col-sm-6 col-md-4">ترتيب حسب التاريخ</label>
+                        <div class="col-sm-6 col-md-8">
+                            <select class="form-control select2 trans-input">
+                                <option>الاحدث</option>
+                                <option>-----</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+
+
+		<div class="content_container content_container--body">
+			<div class="col-xs-12">
+				<div class="boxes">
+					<div class="row">
+						<!-- #Start# BOX -->
+						<div class="col-sm-6 col-md-6 col-lg-3 col-xlg-2">
+							<div data-id="1">
+								<!---USE OF THIS DIV IS TO DETECT THE BOX IN JS-->
+								<div class="box animated zoomIn">
+	<div class="row">
+		<div class="col-xs-8">
+			<span class="indent-text indent-title bold">وزارة الداخلية</span>
+		</div>
+		<div class="col-xs-4 text-left">
+			<div class="checkbox">
+				<label>
+					<input type="checkbox" value="">
+					<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-8">
+			<span class="light-text date-text">28 تشرين الثاني 2018</span>
+		</div>
+		<div class="col-xs-4 text-left">
+			<span class="light-count">17</span>
+		</div>
+	</div>
+
+	<hr class="seperator" />
+
+	<div class="row row-multi-fields">
+		<div class="col-xs-12">
+			<div class="light-text">
+					الموضوع
+			</div>
+			<div class="indent-text">
+					تحقيق المعاملة رقم 2
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="light-text">
+				الاسبقيه
+			</div>
+			<div class="indent-text">
+				عاجل
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="light-text">
+				النوع
+			</div>
+			<div class="indent-text">
+				تعميم
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="light-text">
+				السرية
+			</div>
+			<div class="indent-text">
+				عادي
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="light-text">
+				التصنيف
+			</div>
+			<div class="indent-text">
+				اجازة
+			</div>
+		</div>
+	</div>
+
+	<hr class="seperator" />
+	<div class="row box-icons">
+		<div class="col-xs-6 text-right">
+			<a href="#" class="action-mini" title="action"><i class="uicon icon_actions2 site-color"></i></a>
+			<a href="#" title="edit"><i class="uicon icon_edit site-color"></i></a>
+		</div>
+		<div class="col-xs-6 text-left">
+			<a href="#"><i class="uicon icon_attachments site-color"></i>
+				<span class="light-text  attachments_text"><span>10</span> مرفقات </span>
+			</a>
+		</div>
+	</div>
+
+</div>
+							</div>
+						</div>
+						<!-- #END# BOX -->
+
+						<!-- #Start# BOX -->
+						<div class="col-sm-6 col-md-6 col-lg-3 col-xlg-2">
+							<div data-id="2">
+								<!---USE OF THIS DIV IS TO DETECT THE BOX IN JS-->
+								<div class="box animated zoomIn">
+	<div class="row">
+		<div class="col-xs-8">
+			<span class="indent-text indent-title bold">وزارة الداخلية</span>
+		</div>
+		<div class="col-xs-4 text-left">
+			<div class="checkbox">
+				<label>
+					<input type="checkbox" value="">
+					<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-8">
+			<span class="light-text date-text">28 تشرين الثاني 2018</span>
+		</div>
+		<div class="col-xs-4 text-left">
+			<span class="light-count">17</span>
+		</div>
+	</div>
+
+	<hr class="seperator" />
+
+	<div class="row row-multi-fields">
+		<div class="col-xs-12">
+			<div class="light-text">
+					الموضوع
+			</div>
+			<div class="indent-text">
+					تحقيق المعاملة رقم 2
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="light-text">
+				الاسبقيه
+			</div>
+			<div class="indent-text">
+				عاجل
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="light-text">
+				النوع
+			</div>
+			<div class="indent-text">
+				تعميم
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="light-text">
+				السرية
+			</div>
+			<div class="indent-text">
+				عادي
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="light-text">
+				التصنيف
+			</div>
+			<div class="indent-text">
+				اجازة
+			</div>
+		</div>
+	</div>
+
+	<hr class="seperator" />
+	<div class="row box-icons">
+		<div class="col-xs-6 text-right">
+			<a href="#" class="action-mini" title="action"><i class="uicon icon_actions2 site-color"></i></a>
+			<a href="#" title="edit"><i class="uicon icon_edit site-color"></i></a>
+		</div>
+		<div class="col-xs-6 text-left">
+			<a href="#"><i class="uicon icon_attachments site-color"></i>
+				<span class="light-text  attachments_text"><span>10</span> مرفقات </span>
+			</a>
+		</div>
+	</div>
+
+</div>
+							</div>
+						</div>
+						<!-- #END# BOX -->
+
+						<!-- #Start# BOX -->
+						<div class="col-sm-6 col-md-6 col-lg-3 col-xlg-2">
+							<div data-id="3">
+								<!---USE OF THIS DIV IS TO DETECT THE BOX IN JS-->
+								<div class="box animated zoomIn">
+	<div class="row">
+		<div class="col-xs-8">
+			<span class="indent-text indent-title bold">وزارة الداخلية</span>
+		</div>
+		<div class="col-xs-4 text-left">
+			<div class="checkbox">
+				<label>
+					<input type="checkbox" value="">
+					<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-8">
+			<span class="light-text date-text">28 تشرين الثاني 2018</span>
+		</div>
+		<div class="col-xs-4 text-left">
+			<span class="light-count">17</span>
+		</div>
+	</div>
+
+	<hr class="seperator" />
+
+	<div class="row row-multi-fields">
+		<div class="col-xs-12">
+			<div class="light-text">
+					الموضوع
+			</div>
+			<div class="indent-text">
+					تحقيق المعاملة رقم 2
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="light-text">
+				الاسبقيه
+			</div>
+			<div class="indent-text">
+				عاجل
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="light-text">
+				النوع
+			</div>
+			<div class="indent-text">
+				تعميم
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="light-text">
+				السرية
+			</div>
+			<div class="indent-text">
+				عادي
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="light-text">
+				التصنيف
+			</div>
+			<div class="indent-text">
+				اجازة
+			</div>
+		</div>
+	</div>
+
+	<hr class="seperator" />
+	<div class="row box-icons">
+		<div class="col-xs-6 text-right">
+			<a href="#" class="action-mini" title="action"><i class="uicon icon_actions2 site-color"></i></a>
+			<a href="#" title="edit"><i class="uicon icon_edit site-color"></i></a>
+		</div>
+		<div class="col-xs-6 text-left">
+			<a href="#"><i class="uicon icon_attachments site-color"></i>
+				<span class="light-text  attachments_text"><span>10</span> مرفقات </span>
+			</a>
+		</div>
+	</div>
+
+</div>
+							</div>
+						</div>
+						<!-- #END# BOX -->
+
+
+						<!-- #Start# BOX -->
+						<div class="col-sm-6 col-md-6 col-lg-3 col-xlg-2">
+							<div data-id="4">
+								<!---USE OF THIS DIV IS TO DETECT THE BOX IN JS-->
+								<div class="box animated zoomIn">
+	<div class="row">
+		<div class="col-xs-8">
+			<span class="indent-text indent-title bold">وزارة الداخلية</span>
+		</div>
+		<div class="col-xs-4 text-left">
+			<div class="checkbox">
+				<label>
+					<input type="checkbox" value="">
+					<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-8">
+			<span class="light-text date-text">28 تشرين الثاني 2018</span>
+		</div>
+		<div class="col-xs-4 text-left">
+			<span class="light-count">17</span>
+		</div>
+	</div>
+
+	<hr class="seperator" />
+
+	<div class="row row-multi-fields">
+		<div class="col-xs-12">
+			<div class="light-text">
+					الموضوع
+			</div>
+			<div class="indent-text">
+					تحقيق المعاملة رقم 2
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="light-text">
+				الاسبقيه
+			</div>
+			<div class="indent-text">
+				عاجل
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="light-text">
+				النوع
+			</div>
+			<div class="indent-text">
+				تعميم
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="light-text">
+				السرية
+			</div>
+			<div class="indent-text">
+				عادي
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="light-text">
+				التصنيف
+			</div>
+			<div class="indent-text">
+				اجازة
+			</div>
+		</div>
+	</div>
+
+	<hr class="seperator" />
+	<div class="row box-icons">
+		<div class="col-xs-6 text-right">
+			<a href="#" class="action-mini" title="action"><i class="uicon icon_actions2 site-color"></i></a>
+			<a href="#" title="edit"><i class="uicon icon_edit site-color"></i></a>
+		</div>
+		<div class="col-xs-6 text-left">
+			<a href="#"><i class="uicon icon_attachments site-color"></i>
+				<span class="light-text  attachments_text"><span>10</span> مرفقات </span>
+			</a>
+		</div>
+	</div>
+
+</div>
+							</div>
+						</div>
+						<!-- #END# BOX -->
+
+						<!-- #Start# BOX -->
+						<div class="col-sm-6 col-md-6 col-lg-3 col-xlg-2">
+							<div data-id="5">
+								<!---USE OF THIS DIV IS TO DETECT THE BOX IN JS-->
+								<div class="box animated zoomIn">
+	<div class="row">
+		<div class="col-xs-8">
+			<span class="indent-text indent-title bold">وزارة الداخلية</span>
+		</div>
+		<div class="col-xs-4 text-left">
+			<div class="checkbox">
+				<label>
+					<input type="checkbox" value="">
+					<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-8">
+			<span class="light-text date-text">28 تشرين الثاني 2018</span>
+		</div>
+		<div class="col-xs-4 text-left">
+			<span class="light-count">17</span>
+		</div>
+	</div>
+
+	<hr class="seperator" />
+
+	<div class="row row-multi-fields">
+		<div class="col-xs-12">
+			<div class="light-text">
+					الموضوع
+			</div>
+			<div class="indent-text">
+					تحقيق المعاملة رقم 2
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="light-text">
+				الاسبقيه
+			</div>
+			<div class="indent-text">
+				عاجل
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="light-text">
+				النوع
+			</div>
+			<div class="indent-text">
+				تعميم
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="light-text">
+				السرية
+			</div>
+			<div class="indent-text">
+				عادي
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="light-text">
+				التصنيف
+			</div>
+			<div class="indent-text">
+				اجازة
+			</div>
+		</div>
+	</div>
+
+	<hr class="seperator" />
+	<div class="row box-icons">
+		<div class="col-xs-6 text-right">
+			<a href="#" class="action-mini" title="action"><i class="uicon icon_actions2 site-color"></i></a>
+			<a href="#" title="edit"><i class="uicon icon_edit site-color"></i></a>
+		</div>
+		<div class="col-xs-6 text-left">
+			<a href="#"><i class="uicon icon_attachments site-color"></i>
+				<span class="light-text  attachments_text"><span>10</span> مرفقات </span>
+			</a>
+		</div>
+	</div>
+
+</div>
+							</div>
+						</div>
+						<!-- #END# BOX -->
+
+
+						<!-- #Start# BOX -->
+						<div class="col-sm-6 col-md-6 col-lg-3 col-xlg-2">
+							<div data-id="6">
+								<!---USE OF THIS DIV IS TO DETECT THE BOX IN JS-->
+								<div class="box animated zoomIn">
+	<div class="row">
+		<div class="col-xs-8">
+			<span class="indent-text indent-title bold">وزارة الداخلية</span>
+		</div>
+		<div class="col-xs-4 text-left">
+			<div class="checkbox">
+				<label>
+					<input type="checkbox" value="">
+					<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-8">
+			<span class="light-text date-text">28 تشرين الثاني 2018</span>
+		</div>
+		<div class="col-xs-4 text-left">
+			<span class="light-count">17</span>
+		</div>
+	</div>
+
+	<hr class="seperator" />
+
+	<div class="row row-multi-fields">
+		<div class="col-xs-12">
+			<div class="light-text">
+					الموضوع
+			</div>
+			<div class="indent-text">
+					تحقيق المعاملة رقم 2
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="light-text">
+				الاسبقيه
+			</div>
+			<div class="indent-text">
+				عاجل
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="light-text">
+				النوع
+			</div>
+			<div class="indent-text">
+				تعميم
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="light-text">
+				السرية
+			</div>
+			<div class="indent-text">
+				عادي
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="light-text">
+				التصنيف
+			</div>
+			<div class="indent-text">
+				اجازة
+			</div>
+		</div>
+	</div>
+
+	<hr class="seperator" />
+	<div class="row box-icons">
+		<div class="col-xs-6 text-right">
+			<a href="#" class="action-mini" title="action"><i class="uicon icon_actions2 site-color"></i></a>
+			<a href="#" title="edit"><i class="uicon icon_edit site-color"></i></a>
+		</div>
+		<div class="col-xs-6 text-left">
+			<a href="#"><i class="uicon icon_attachments site-color"></i>
+				<span class="light-text  attachments_text"><span>10</span> مرفقات </span>
+			</a>
+		</div>
+	</div>
+
+</div>
+							</div>
+						</div>
+						<!-- #END# BOX -->
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="text-center">
+	<nav aria-label="Page navigation">
+			<ul class="pagination">
+			  <li class="page-item"><a class="page-link" href="#">السابق</a></li>
+			  <li class="page-item"><a class="page-link" href="#">1</a></li>
+			  <li class="page-item"><a class="page-link" href="#">2</a></li>
+			  <li class="page-item"><a class="page-link" href="#">3</a></li>
+			  <li class="page-item"><a class="page-link" href="#">التالي</a></li>
+			</ul>
+		  </nav>
+		</div>
+
+<!-- ****************************** end Content ************************* -->
+
+<div class="sidebarMultiOptions invisible transparent-bg">
+    <div class="options-list">
+
+        <div class="col-sm-4 text-right info-bottom">
+
+            <span class="paper_count"></span>
+            <span>معاملات</span>
+            <a class="close-box" href="javascript:toggleSelectedPaperBox()">
+                <i class="uicon icon_arrow_down"></i>
+            </a>
+        </div>
+        <div class="col-sm-8 bottom-actions text-left">
+
+            <div class="text-center"><a href="javascript:paperAssign()" class="boardered-circle-transparent"><i class="uicon icon_refresh_right"></i></a>
+                <a href="javascript:paperAssign()">الاحالة المباشرة</a>
+            </div>
+            <div class="text-center "><a href="javascript:paperSendToDone()" class="boardered-circle-transparent"><i class="uicon icon_folder10"></i></a>
+                <a href="javascript:paperSendToDone()">نقل الى منجزة</a>
+            </div>
+            <a href="javascript:closeSendActionShowMessage()"  class="close-box close-box-md hidden-success"><i class="uicon icon_close"></i></a>
+
+        </div>
+
+
+
+    </div>
+    <div class="bottom-white selected-papers-wrapper">
+        <div class="col-xs-12">
+            <ul class="papers-selected">
+          
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="bottom-white msg-bottom-box msg-confirm-box">
+            <div class="col-xs-12 col-sm-6">
+                <h4 class="title4">
+                        <i class="glyphicon glyphicon-question-sign"></i>
+                    <span>سيتم نقل المعاملات الى قائمة المعاملات المنجزة</span>
+                </h4>
+            </div>
+            <div class="col-sm-6 text-left">
+                    <a class="btn-site btn-trans" href="javascript:closePaperSendToDone()">الغاء</a>
+                <a class="btn-site" href="javascript:sendActionShowMessage()">موافق</a>
+            </div>
+        </div>
+
+    <div class="bottom-white msg-bottom-box success-done-msg">
+        <div class="col-xs-12 col-sm-6">
+            <h4 class="title4">
+                <i class="glyphicon glyphicon-ok"></i>
+                <span>تم نقل المعاملات الى قائمة المعاملات المنجزة بنجاح</span>
+            </h4>
+        </div>
+        <div class="col-sm-6 text-left">
+            <a class="btn-site" href="#">الذهاب الى المعاملات المنجزة</a>
+        </div>
+    </div>
+</div>
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.js"></script>
+<script src="js/jquery.matchHeight-min.js"></script>
+<script src="js/moment-with-locales.js"></script>
+<script src="js/bootstrap-datetimepicker.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/jquery.slimscroll.min.js"></script>
+<script src="js/select2.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<!--below 3 scripts called for preview purpose, you can replace if previwer changed-->
+<script src="//code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
+ crossorigin="anonymous"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+<script src="js/jquery.iviewer.min.js"></script>
+
+<script src="js/app.js"></script>
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+</body>
+
+</html>

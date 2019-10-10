@@ -1,0 +1,272 @@
+<!-- @import "../_header.kit" -->
+
+<!-- ******************************Content ************************* -->
+<!-- Only for pages page ---->
+<style>
+	h3 {
+		margin-top: 5px;
+		margin-bottom: 5px;
+		border-bottom: 1px solid #eee;
+		padding-bottom: 5px;
+	}
+
+	h3 a,
+	h3 a:hover {
+		color: #0c7c5a;
+		font-size: 16px;
+	}
+
+	h2 {
+		font-size: 22px;
+		margin-top: 0;
+		font-style: unset;
+		font-weight: bold;
+		margin-top: 40px;
+	}
+
+	.pages-container {
+		padding: 15px;
+		min-height: 300px;
+		border: 1px solid #0c7c5a;
+		border-radius: 8px;
+		max-width: 92%;
+	}
+
+	h3 i {
+		font-size: 14px;
+	}
+</style>
+<script>
+	if (location.pathname.split('/')[1] != "pages.html") {
+		var pagesURL = '/' + location.pathname.split('/')[1];
+	} else {
+		var pagesURL = "";
+	}
+</script>
+<div class="content_wrapper--nosidebar">
+	<div class="container white-bg pages-container">
+		<div class="row">
+
+			<div class="col-md-12">
+
+				<p>
+					<label>*ملاحظات عامة على جميع الصفحات:</label>
+					<ol>
+						<li>
+							ايقونات الموقع جميعها مع اسماء الكلاسات تجدونها في هذه الصفحة<br />
+							<script>document.write('<a target="_blank" href="' + pagesURL + '/fonts/minofjustice/index.html"><i class="glyphicon glyphicon-exclamation-sign"></i> صفحة الايقونات مع اسماء الكلاسات </a>')</script>
+						</li>
+						<li>النقر غلى السهم بجانب فلان الفلاني يظهر القائمة المنسدلة</li>
+						<li>النقر على زر ابحث يفتح صندوق البحث</li>
+						<li>النقر على القائمة اليمنى يعطي حركية القائمة في الصفحات المتواجدة بها</li>
+						<li>في الصفحات المتواجد بها العين، النقر على العين يعطي الحركية</li>
+					</ol>
+				</p>
+				<ul>
+					<li>
+						<h3>
+							<script>document.write('<a target="_blank" href="' + pagesURL + '/login.html">صفحة تسجيل الدخول </a>')</script>
+						</h3>
+					</li>
+					<li>
+						<h3>
+							<script>document.write('<a target="_blank" href="' + pagesURL + '/tree-nav.html">Tree & Nav</a>')</script>
+						</h3>
+					</li>
+				</ul>
+				<h2> صفحات البحث</h2>
+				<ul>
+					<li>
+						<h3>
+							<script>document.write('<a target="_blank" href="' + pagesURL + '/search.html">صفحة البحث الرئيسية_مع تفعيل خاصية حقول اضافية </a>')</script>
+						</h3>
+					</li>
+					<li>
+						<h3>
+							<script>document.write('<a target="_blank" href="' + pagesURL + '/search-noresult.html">صفحة البحث الرئيسية_ من دون نتائج </a>')</script>
+						</h3>
+					</li>
+					<li>
+						<h3>
+							<script>document.write('<a target="_blank" href="' + pagesURL + '/search-permission.html">صفحة البحث الرئيسية_ الصلاحيات مع الارجاع(بوب اب) بالنقر على ارجاع ثم ارجاع لاضهار رسالة لتمام العملية </a>')</script>
+						</h3>
+					</li>
+					<li>
+						<h3>
+							<script>document.write('<a target="_blank" href="' + pagesURL + '/search-validation.html">صفحة البحث الرئيسية_ مع رسالة التحقق </a>')</script>
+						</h3>
+					</li>
+				</ul>
+				<hr />
+				<h2> صفحات تعديل المعاملة</h2>
+				<ul>
+					<li>
+						<h3>
+							<script>document.write('<a target="_blank" href="' + pagesURL + '/edit_paper.html">مهام المعاملة </a>')</script>
+						</h3>
+					</li>
+					<li>
+						<h3>
+							<script>document.write('<a target="_blank" href="' + pagesURL + '/edit_paper_join.html">ربط بمعاملات سابقة </a>')</script>
+						</h3>
+					</li>
+					<li>
+						<h3>
+							<script>document.write('<a target="_blank" href="' + pagesURL + '/edit_paper_join-nopaper.html"> لم يتم العثور على معاملة ربط بمعاملات سابقة </a>')</script>
+						</h3>
+					</li>
+					<li>
+						<h3>
+							<script>document.write('<a target="_blank" href="' + pagesURL + '/paper_attachment-popup.html"> بالضغط على حذف بالجدول يظهر صندوق التأكيد (بوب اب)</a>')</script>
+						</h3>
+					</li>
+					<li>
+						<h3>
+							<script>document.write('<a target="_blank" href="' + pagesURL + '/return-paper.html"> ارجاع المعاملة</a>')</script>
+						</h3>
+					</li>
+					<li>
+						<h3>
+							<script>document.write('<a target="_blank" href="' + pagesURL + '/return-paper-msg.html"> ارجاع المعاملة _ رسالة الارجاع</a>')</script>
+						</h3>
+					</li>
+					<li>
+						<h3>
+							<script>document.write('<a target="_blank" href="' + pagesURL + '/assign-with-paper.html"> الإحالة باستخدام ورقة الإحالة</a>')</script>
+						</h3>
+					</li>
+
+
+
+				</ul>
+				<hr />
+				<h4 class="title3 sub-title"><i class="glyphicon glyphicon-exclamation-sign exc-paper"></i> تعديلات
+					الاحالة و المنيو الثانوية و حركية اختيار المعاملات تمت على الصفحة التالية (بتحديد احد المعاملات
+					ستظهر الحركية)</h4>
+				<ul>
+					<li>
+						<h3>
+							<script>document.write('<a target="_blank" href="' + pagesURL + '/papers_pending.html">معاملات قيد التنفيذ **<i style="color:red">بالضغط على زر التصفية يظهر صندوق التصفية </i></a>/ <i style="color:red">الضغط على جدول يظهر صندوق الجدول</i>/ <i style="color:red">الضغط على زر الترتيب يظهر صندوق الترتيب</i>')</script>
+						</h3>
+					</li>
+				</ul>
+				<hr />
+				<hr />
+				<h2>الصفحات:</h2>
+				<ul>
+					<li>
+						<h3>
+							<script>document.write('<a target="_blank" href="' + pagesURL + '/papers_pending.html">معاملات قيد التنفيذ **<i style="color:red">بالضغط على زر التصفية يظهر صندوق التصفية </i></a>/ <i style="color:red">الضغط على جدول يظهر صندوق الجدول</i>/ <i style="color:red">الضغط على زر الترتيب يظهر صندوق الترتيب</i>')</script>
+						</h3>
+					</li>
+					<li>
+						<h3>
+							<script>document.write('<a target="_blank" href="' + pagesURL + '/papers_electronics.html">النسخ الالكترونية للمعاملات -  الصفحة الداخلية للنسخ الالكترونية 07</a>');</script>
+						</h3>
+					</li>
+					<li>
+						<h3>
+							<Script>document.write('<a target="_blank" href="' + pagesURL + '/create_inbox.html">انشاء وارد **<i style="color:red">بالنقر على حفظ المعاملة ادنى الصفحة يظهر البوب اب</i>/<i style="color:red">تم اظافة حقل متعدد الخيارات في نوع جهة الوارد</i></a>');</Script>
+						</h3>
+					</li>
+					<li>
+						<h3>
+							<Script>document.write('<a target="_blank" href="' + pagesURL + '/papers_pending_functions.html">عمل اجراءات لمعاملة واحدة 08</a>');</Script>
+						</h3>
+					</li>
+					<li>
+						<h3>
+							<Script>document.write('<a target="_blank" href="' + pagesURL + '/papers_pending_functions_assignments.html">11 صفحة الاجراءات لمعاملة واحدة - احالة مباشرة</a>');</Script>
+						</h3>
+					</li>
+					<li>
+						<h3>
+							<Script>document.write('<a target="_blank" href="' + pagesURL + '/papers_pending_functions_assignments_validation.html">10 صفحة الاجراءات لمعاملة واحدة - احالة مباشرة - تحقق من الحقول **<i style="color:red;">validation provided here</i>**</a>');</Script>
+						</h3>
+					</li>
+					<li>
+						<h3>
+							<Script>document.write('<a target="_blank" href="' + pagesURL + '/papers_multi_functions.html">12 عمل اجراءات لاكثر من معاملة ، **<i style="color:red">باختيار اي من المعاملات ستظهر لك قائمة المهام</i></a>');</Script>
+						</h3>
+					</li>
+					<li>
+						<h3>
+							<Script>document.write('<a target="_blank" href="' + pagesURL + '/papers_pending_functions_multi.html">14 صفحة التعديل ، **<i style="color:red">slider functions</i></a>');</Script>
+						</h3>
+					</li>
+					<li>
+						<h3>
+							<Script>document.write('<a target="_blank" href="' + pagesURL + '/create_inbox_add_third_party.html">17 اضافة جهة خارجية ١</a>');</Script>
+						</h3>
+					</li>
+					<li>
+						<h3>
+							<Script>document.write('<a target="_blank" href="' + pagesURL + '/create_inbox_person.html">22 اضافة بيانات صاحب العلاقة ١</a>');</Script>
+						</h3>
+					</li>
+					<li>
+						<h3>
+							<Script>document.write('<a target="_blank" href="' + pagesURL + '/paper_attachment.html">21 ملحقات اصل المعاملة ٢</a>');</Script>
+						</h3>
+					</li>
+
+					<li>
+						<h3>
+							<Script>document.write('<a target="_blank" href="' + pagesURL + '/create_inbox_person2.html">23 اضافة بيانات صاحب العلاقة ٢</a>');</Script>
+						</h3>
+					</li>
+					<li>
+						<h3>
+							<Script>document.write('<a target="_blank" href="' + pagesURL + '/paper_add_electronics_copy.html">24 نسخ الكترونية لادارة داخلية ١</a>');</Script>
+						</h3>
+					</li>
+
+					<li>
+						<h3>
+							<Script>document.write('<a target="_blank" href="' + pagesURL + '/paper_add_electronics_copy2.html">25 نسخ الكترونية لادارة داخلية ٢</a>');</Script>
+						</h3>
+					</li>
+
+
+					<li>
+						<h3>
+							<Script>document.write('<a target="_blank" href="' + pagesURL + '/paper_add_electronics_copy_internal.html">26 نسخ الكترونية لادارة خارجية ١</a>');</Script>
+						</h3>
+					</li>
+
+					<li>
+						<h3>
+							<Script>document.write('<a target="_blank" href="' + pagesURL + '/paper_add_electronics_copy2_internal.html">28 نسخ الكترونية لادارة خارجية ٣**<i style="color:red">اضافة مرافق تظهر بالضغط على تحميل مرفق جديد</i></a>');</Script>
+						</h3>
+					</li>
+					<li>
+						<h3>
+							<Script>document.write('<a target="_blank" href="' + pagesURL + '/add_connection.html">30 اضافة ربط ٢</a>');</Script>
+						</h3>
+					</li>
+					<li>
+						<h3>
+							<Script>document.write('<a target="_blank" href="' + pagesURL + '/add_connection2.html">31 اضافة ربط ٣</a>');</Script>
+						</h3>
+					</li>
+					<li>
+						<h3>
+							<Script>document.write('<a target="_blank" href="' + pagesURL + '/paper_attachment2.html">20 ملحقات اصل المعاملة ١</a>');</Script>
+						</h3>
+					</li>
+
+
+
+
+				</ul>
+			</div>
+
+
+		</div>
+	</div>
+</div>
+
+
+<!-- ****************************** end Content ************************* -->
+
+<!-- @import "../_footer.kit" -->

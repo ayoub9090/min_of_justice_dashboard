@@ -1,0 +1,60 @@
+<div class="sidebarMultiOptions invisible transparent-bg">
+    <div class="options-list">
+
+        <div class="col-sm-4 text-right info-bottom">
+
+            <span class="paper_count"></span>
+            <span>معاملات</span>
+            <a class="close-box" href="javascript:toggleSelectedPaperBox()">
+                <i class="uicon icon_arrow_down"></i>
+            </a>
+        </div>
+        <div class="col-sm-8 bottom-actions text-left">
+
+            <div class="text-center"><a href="javascript:paperAssign()" class="boardered-circle-transparent"><i class="uicon icon_refresh_right"></i></a>
+                <a href="javascript:paperAssign()">الاحالة المباشرة</a>
+            </div>
+            <div class="text-center "><a href="javascript:paperSendToDone()" class="boardered-circle-transparent"><i class="uicon icon_folder10"></i></a>
+                <a href="javascript:paperSendToDone()">نقل الى منجزة</a>
+            </div>
+            <a href="javascript:closeSendActionShowMessage()"  class="close-box close-box-md hidden-success"><i class="uicon icon_close"></i></a>
+
+        </div>
+
+
+
+    </div>
+    <div class="bottom-white selected-papers-wrapper">
+        <div class="col-xs-12">
+            <ul class="papers-selected">
+          
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="bottom-white msg-bottom-box msg-confirm-box">
+            <div class="col-xs-12 col-sm-6">
+                <h4 class="title4">
+                        <i class="glyphicon glyphicon-question-sign"></i>
+                    <span>سيتم نقل المعاملات الى قائمة المعاملات المنجزة</span>
+                </h4>
+            </div>
+            <div class="col-sm-6 text-left">
+                    <a class="btn-site btn-trans" href="javascript:closePaperSendToDone()">الغاء</a>
+                <a class="btn-site" href="javascript:sendActionShowMessage()">موافق</a>
+            </div>
+        </div>
+
+    <div class="bottom-white msg-bottom-box success-done-msg">
+        <div class="col-xs-12 col-sm-6">
+            <h4 class="title4">
+                <i class="glyphicon glyphicon-ok"></i>
+                <span>تم نقل المعاملات الى قائمة المعاملات المنجزة بنجاح</span>
+            </h4>
+        </div>
+        <div class="col-sm-6 text-left">
+            <a class="btn-site" href="#">الذهاب الى المعاملات المنجزة</a>
+        </div>
+    </div>
+</div>

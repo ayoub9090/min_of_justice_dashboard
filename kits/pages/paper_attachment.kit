@@ -1,0 +1,243 @@
+<!-- @import "../_header.kit" -->
+
+<!-- ******************************Content ************************* -->
+
+
+<div class="content_wrapper--nosidebar">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-12">
+				<div class="content_container site_border">
+					<div class="content_container content_container--header extra-padding">
+						<div class="row">
+							<div class="col-xs-6">
+								<h3 class="title2 title2-padding">انشاء وارد</h3>
+							</div>
+							<div class="col-xs-6 text-left">
+								<a class="btn-site btn-inbox-up" href="#"><i class="uicon icon_copy"></i> نسخ بيانات أخر وارد</a>
+								<a class="close-box hidden-xs" href="#"><i class="uicon icon_close"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="content_container content_container--body transparent-bg">
+						<div class="options-list row">
+
+							<div class="col-xs-4 col-sm-2 text-center"><a href="#" class="boardered-circle-transparent"><i class="uicon icon_folder1"></i></a>
+								<a href="#"> البيانات الاساسية</a></div>
+
+							<div class="col-xs-4 col-sm-2 text-center"><a href="#" class="boardered-circle-transparent active"><i class="uicon icon_folder2"></i></a>
+								<a href="#"> ملحقات اصل المعاملة</a></div>
+							<div class="col-xs-4 col-sm-2 text-center"><a href="#" class="boardered-circle-transparent"><i class="uicon icon_folder3"></i></a>
+								<a href="#"> بيانات صاحب العلاقة</a></div>
+							<div class="col-xs-4 col-sm-2 text-center"><a href="#" class="boardered-circle-transparent"><i class="uicon icon_folder4"></i></a>
+								<a href="#"> نسخ الكترونية لادارة داخلية</a></div>
+							<div class="col-xs-4 col-sm-2 text-center"><a href="#" class="boardered-circle-transparent"><i class="uicon icon_folder4"></i></a>
+								<a href="#"> نسخ الكترونية لادارة خارجية</a></div>
+							<div class="col-xs-4 col-sm-2 text-center"><a href="#" class="boardered-circle-transparent"><i class="uicon icon_folder5"></i></a>
+								<a href="#"> ربط</a></div>
+						</div>
+					</div>
+					<div class="content_container content_container--body white-bg">
+						<div class="col-xs-12">
+							<div class="single-wrapper">
+
+								<!--<div class="row">
+									<div class="col-xs-12">
+										<h4 class="title4">ملحقات اصل المعاملة المضافة</h4>
+									</div>
+								</div>
+-->
+							
+
+
+	
+								<div class="row">
+									<div class="col-sm-12">
+										<!-- Paper info -->
+										<div class="animated zoomIn">
+											<div class="row">
+												<!--<div class="col-xs-12 text-center">
+													<h4 class="title6"> اضافة ملحق</h4>
+												</div>
+-->
+												<div class="col-sm-4 col-xs-12 col-extra-bottom-margin">
+													<fieldset>
+														<div class="form-group">
+															<label class="control-label">نوع الملحق</label>
+															<div>
+																<select class="form-control select2 trans-input">
+																	<option>وثيقة</option>
+																	<option>وثيقة</option>
+																</select>
+															</div>
+														</div>
+													</fieldset>
+												</div>
+
+												<div class="col-xs-12 text-center">
+
+													<div class="previewBox">
+														<div class="row">
+															<div class="col-xs-12 text-left">
+																<div class="preview_options">
+																	<ul class="preview_options_list">
+																		<li>
+																			<a href="#"><i class="uicon icon_scan"></i></a>
+																		</li>
+																		<li>
+																			<a href="#"><i class="uicon icon_scan"></i><span class="colored-chart"></span></a>
+																		</li>
+																		<li>
+																			<a href="#"><i class="uicon icon_attachment_plus"></i></a>
+																		</li>
+																		<li>
+																			<a href="javascript:void(0)" class="VzoomOut"><i class="uicon icon_zoom-out"></i></a>
+																		</li>
+																		<li>
+																			<a href="javascript:void(0)" class="VzoomIn"><i class="uicon icon_zoom-in"></i></a>
+																		</li>
+																		<li>
+																			<a href="javascript:void(0)" class="iviewer_rotate_right"><i class="uicon icon_refresh_right"></i></a>
+																		</li>
+																		<li>
+																			<a href="javascript:void(0)" class="iviewer_rotate_left"><i class="uicon icon_refresh-left"></i></a>
+																		</li>
+																		<li>
+																			<a href="#"><i class="uicon icon_edit2"></i></a>
+																		</li>
+																		<li>
+																			<a href="#"><i class="uicon icon_barcode"></i></a>
+																		</li>
+																		<li>
+																			<a href="#"><i class="uicon icon_barcode"></i><span class="colored-plus"></span></a>
+																		</li>
+																		<li>
+																			<a href="javascript:PrintImage('/images/doc_sample.jpg')"><i class="uicon icon_printer"></i></a>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-xs-12 text-left wrapper">
+																<!-- Canvas container-->
+																<div id="viewer" class="viewer"></div>
+
+															</div>
+														</div>
+
+													</div>
+
+
+												</div>
+												<div class="col-xs-12 text-left preview-mini-navigation">
+													<div class="row">
+														<div class="col-xs-4 text-right">
+															<a href="javascript:void:(0)" class="ViewrPrev"><i class="uicon icon_arrow_right"></i></a>
+														</div>
+														<div class="col-xs-4 text-center">
+															<span class="count">1</span><span class="seper">/</span><span>2</span>
+														</div>
+														<div class="col-xs-4 text-left">
+															<a href="javascript:void:(0)" class="ViewrNext"><i class="uicon icon_arrow_left"></i></a>
+														</div>
+													</div>
+												</div>
+
+												<div class="col-xs-12 col-extra-bottom-margin">
+													<fieldset>
+														<div class="form-group">
+															<label class="control-label">وصف المرفق</label>
+															<div>
+																<textarea class="form-control long-textarea3"></textarea>
+															</div>
+														</div>
+													</fieldset>
+												</div>
+
+												<div class="col-xs-12 text-left preview-mini-options">
+													<a href="#" class="color-danger remove-mini"><i class="uicon icon_recycle"></i> حذف </a>
+													<a class="btn-site" href="#"><i class="glyphicon glyphicon-plus"></i> اضافة </a>
+												</div>
+
+
+
+											</div>
+
+										</div>
+
+										<!-- Paper info #END# -->
+									</div>
+
+
+								</div>
+
+<hr class="bottom-hr" />
+<div class="row">
+		<div class="col-xs-6">
+			<label>2 ملحقات</label>
+		</div>
+		<div class="col-xs-6 text-left">
+
+		</div>
+
+		<div class="col-xs-12">
+		
+				<table class="table table-3-td">
+					<thead>
+						<tr>
+							<th>الملحقات</th>
+							<th>النوع</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>الملحق الاول</td>
+							<td>النوع الاول</td>
+							<td class="text-left">
+								<a href="#" class="color-danger action-icon"><i class="uicon icon_recycle"></i></a>
+								<a href="#" class="site-color action-icon"><i class="uicon icon_edit"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>الملحق الثاني</td>
+							<td>النوع الثاني</td>
+							<td class="text-left">
+								<a href="#" class="color-danger action-icon"><i class="uicon icon_recycle"></i></a>
+								<a href="#" class="site-color action-icon"><i class="uicon icon_edit"></i></a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+		
+		</div>
+
+	</div>
+
+							</div>
+						</div>
+					</div>
+
+					<div class="content_container content_container--footer">
+						<div class="row">
+							<div class="col-xs-12 text-center">
+								<button class="btn-site" data-toggle="modal" data-target="#saveModal"><i class="uicon icon_save"></i> حفظ
+									المعاملة </button>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+</div>
+
+
+<!-- ****************************** end Content ************************* -->
+<!-- @import "../_popup.kit" -->
+<!-- @import "../_footer.kit" -->
